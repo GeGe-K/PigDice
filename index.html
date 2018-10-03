@@ -10,7 +10,10 @@
   <body>
     <div class="container">
       <h1><img src="image/pig.jpg" height="200"> Dice Game</h1>
-      <div id="rules">
+      <p id="slogan">Lets Roll Some Dice</p>
+
+    <!-- game rules -->
+    <div id="rules">
       <h2>Rules</h2>
       <p id="instruct">Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold".</p>
       <ul>
@@ -20,6 +23,46 @@
         <li>The first player to score 100 points or more wins.</li>
       </ul>
     </div>
+
+    <!-- player info -->
+    <div class="names">
+      <h2>Enter your names to play</h2>
+      <form id=players>
+        <div class="form-group">
+          <input type="text" id="player1" placeholder="Player One" class="form-control">
+        </div>
+        <br>
+        <div class="form-group">
+          <input type="text" id="player2" placeholder="Player Two" class="form-control">
+        </div>
+        <br>
+        <button type="submit" id="gameOn" name="button" clas="btn bg-info">Game On!</button>
+      </form>
+    </div>
+
+    <!-- game console -->
+    <div class="game-console">
+    <div class="player1">
+      <h2>Player 1:</h2>
+      <label for="rollDice1">Roll Dice</label>
+      <button id="roll1"  class="btn btn-danger btn-lg">ROLL</button>
+      <button id="hold1" class="btn btn-info btn-lg">HOLD</button>
+    </div> <!-- end of player 1 -->
+    <div class="player2">
+      <h2>Player 2:</h2>
+      <label for="rollDice2"></label>
+      <button id="roll2" class="btn btn-danger btn-lg">ROLL</button>
+      <button id="hold2" class="btn btn-info btn-lg">HOLD</button>
+    </div> <!-- end of player 2 -->
+    <div class="tally"> <!-- tally -->
+      <label for="score1">Player 1:</label>
+      <label id="score1">0</label>
+      <label for="score2">Player 2:</label>
+      <label id="score2">0</label>
+    </div>
+    </div>
+
+
 
 
     </div>
